@@ -7,6 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
 
 / {
         keymap {
@@ -44,7 +46,7 @@
 // |  TAB |    !    |     @    |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL | RGB_TOG |          |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT | BL_TOG  | BL_CYCLE |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL        &kp AT       &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &rgb_ug RGB_TOG &trans       &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
