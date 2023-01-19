@@ -28,14 +28,14 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |  ~  |  `  |  \  |   |  7  |  8  |  9  |  (  |  )  | BKSP |
-// |      |     |     |     |     |     |   |  4  |  5  |  6  |  {  |  }  |  "|" |
-// | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |  0  |  [  |   ]  |
+// |  TAB |     |     |  ~  |  `  |  \  |   |  (  |  7  |  8  |  9  |  )  | BKSP |
+// |      |     |     |     |     |     |   |  {  |  4  |  5  |  6  |  }  |  0   |
+// | SHFT |     |     |     |     |     |   |  [  |  1  |  2  |  3  |  ]  | "|"  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB        &trans      &trans     &kp TILDE       &kp GRAVE       &kp BSLH             &kp N7      &kp N8      &kp N9     &kp LPAR  &kp RPAR  &kp BSPC
-   &trans         &trans      &trans     &trans          &trans          &trans               &kp N4      &kp N5      &kp N6     &kp LBRC  &kp RBRC  &kp PIPE
-   &kp LSHFT      &trans      &trans     &trans          &trans          &trans               &kp N1      &kp N2      &kp N3     &kp N0    &kp LBKT  &kp RBKT
+   &kp TAB        &trans      &trans     &kp TILDE       &kp GRAVE       &kp BSLH             &kp LPAR    &kp N7      &kp N8     &kp N9    &kp RPAR  &kp BSPC
+   &trans         &trans      &trans     &trans          &trans          &trans               &kp LBRC    &kp N4      &kp N5     &kp N6    &kp RBRC  &kp N0
+   &kp LSHFT      &trans      &trans     &trans          &trans          &trans               &kp LBKT    &kp N1      &kp N2     &kp N3    &kp RBKT  &kp PIPE
                           	         &kp LGUI        &trans          &kp SPACE            &kp RET     &trans      &kp RALT
                         >;
                 };
