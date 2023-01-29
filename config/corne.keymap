@@ -18,7 +18,8 @@
                     #binding-cells = <0>;
                     bindings =
                         <&macro_press &kp LCTRL>,
-                        <&macro_tap &kp Z>;
+                        <&macro_tap &kp Z>,
+                        <&macro_release &kp LCTRL>;
                 };
                 c_cut: c_cut {
                     compatible = "zmk,behavior-macro";
@@ -26,7 +27,8 @@
                     #binding-cells = <0>;
                     bindings = 
                         <&macro_press &kp LCTRL>,
-                        <&macro_tap &kp X>;
+                        <&macro_tap &kp X>,
+                        <&macro_release &kp LCTRL>;
                 };
                 c_copy: c_copy {
                     compatible = "zmk,behavior-macro";
@@ -34,7 +36,8 @@
                     #binding-cells = <0>;
                     bindings = 
                         <&macro_press &kp LCTRL>,
-                        <&macro_tap &kp C>;
+                        <&macro_tap &kp C>,
+                        <&macro_release &kp LCTRL>;
                 };
                 c_paste: c_paste {
                     compatible = "zmk,behavior-macro";
@@ -42,7 +45,8 @@
                     #binding-cells = <0>;
                     bindings = 
                         <&macro_press &kp LCTRL>,
-                        <&macro_tap &kp V>;
+                        <&macro_tap &kp V>,
+                        <&macro_release &kp LCTRL>;
                 };
             };
 
