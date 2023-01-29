@@ -71,7 +71,7 @@
                         bindings = <
    &kp TAB        &kp BSLH    &kp TILDE  &kp GRAVE       &kp PIPE        &kp AMPS             &kp LPAR    &kp N7      &kp N8     &kp N9    &kp RPAR  &kp DEL
    &trans         &trans      &trans     &trans          &kp LEFT        &kp RIGHT            &kp LBRC    &kp N4      &kp N5     &kp N6    &kp RBRC  &kp N0
-   &kp LSHFT      &c_undo     &c_cut     &c_cpoy         &c_paste        &kp CAPS             &kp LBKT    &kp N1      &kp N2     &kp N3    &kp RBKT  &kp PIPE
+   &kp LSHFT      &c_undo     &c_cut     &c_copy         &c_paste        &kp CAPS             &kp LBKT    &kp N1      &kp N2     &kp N3    &kp RBKT  &kp PIPE
                           	         &kp LGUI        &trans          &kp SPACE            &kp RET     &trans      &kp RALT
                         >;
                 };
