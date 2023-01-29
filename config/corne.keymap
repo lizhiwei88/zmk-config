@@ -49,6 +49,115 @@
                         <&macro_release &kp LCTRL>;
                 };
             };
+            
+            combos {
+                compatible = "zmk,combos";
+                combo_Q {
+                    timeout-ms = <50>;
+                    key-positions = <1 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp Q>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_W {
+                    timeout-ms = <50>;
+                    key-positions = <2 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp W>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_E {
+                    timeout-ms = <50>;
+                    key-positions = <3 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp E>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_R {
+                    timeout-ms = <50>;
+                    key-positions = <4 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp R>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_T {
+                    timeout-ms = <50>;
+                    key-positions = <5 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp T>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_A {
+                    timeout-ms = <50>;
+                    key-positions = <13 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp A>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_S {
+                    timeout-ms = <50>;
+                    key-positions = <14 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp S>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_D {
+                    timeout-ms = <50>;
+                    key-positions = <15 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp D>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_F {
+                    timeout-ms = <50>;
+                    key-positions = <16 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp F>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_G {
+                    timeout-ms = <50>;
+                    key-positions = <17 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp G>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_Z {
+                    timeout-ms = <50>;
+                    key-positions = <25 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp Z>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_X {
+                    timeout-ms = <50>;
+                    key-positions = <26 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp X>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_C {
+                    timeout-ms = <50>;
+                    key-positions = <27 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp C>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_V {
+                    timeout-ms = <50>;
+                    key-positions = <28 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp V>,
+                        <&macro_release &kp RSHFT>;
+                };
+                combo_B {
+                    timeout-ms = <50>;
+                    key-positions = <29 32 41>;
+                    bindings = <&macro_press &kp RSHFT>,
+                        <&macro_tap &kp B>,
+                        <&macro_release &kp RSHFT>;
+                };
+            };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -84,12 +193,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |   )   | BKSP  |
 // | CTRL |  _  |  *  |  -  |  +  |  =  |   | UP  | DWN |     |     |RGB_EFF|RGB_TOG|
-// | SHFT |  &  | LFT | RGT | DWN |  UP |   | CTRL| SHFT| BT3 | BT2 |  BT1  | BTCLR |
+// | SHFT |  &  | LFT | RGT | DWN |  UP |   | BT5 | BT4 | BT3 | BT2 |  BT1  | BTCLR |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB   &kp EXCL    &kp AT              &kp HASH    &kp DLLR   &kp PRCNT    &kp CARET      &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR         &kp BSPC
    &kp LCTRL  &kp UNDER   &kp KP_MULTIPLY     &kp MINUS   &kp PLUS   &kp EQUAL    &kp UP         &kp DOWN       &trans          &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
-   &kp LSHFT  &kp AMPS    &kp LEFT            &kp RIGHT   &kp DOWN   &kp UP       &kp RCTRL   &kp RSHFT   &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
+   &kp LSHFT  &kp AMPS    &kp LEFT            &kp RIGHT   &kp DOWN   &kp UP       &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
                     	                      &kp LGUI    &trans     &kp SPACE    &kp RET        &trans         &kp RALT
                         >;
                 };
